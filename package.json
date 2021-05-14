@@ -17,5 +17,11 @@
   "bugs": {
     "url": "https://github.com/fidel-bello/google-books-react-search/issues"
   },
-  "homepage": "https://github.com/fidel-bello/google-books-react-search#readme"
+  "homepage": "https://github.com/fidel-bello/google-books-react-search#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "express": "^4.17.1",
+    "if-env": "^1.0.4",
+    "mongoose": "^5.12.9"
+  }
 }
