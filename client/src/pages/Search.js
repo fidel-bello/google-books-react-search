@@ -1,4 +1,3 @@
-import { query } from 'express';
 import React from 'react';
 import Form from '../components/Form';
 import Results from '../components/Results';
@@ -24,8 +23,8 @@ class Search extends React.Component {
     }
     searchBook = query => {
         API.getBook(query)
-        .then(res => this.setState({ books : res.data.items.map(bookData => this.makeBook(bookData))}))
-        .catch(err => console.log(err));
+            .then(res => this.setState({ books: res.data.items.map(bookData => this.makeBook(bookData)) }))
+            .catch(err => console.log(err));
     };
 
     handleInputChange = event => {
@@ -35,4 +34,25 @@ class Search extends React.Component {
             [name]: value
         });
     };
+    handleFormSubmit = event => {
+        event.preventDefault();
+        this.searchBook(this.state.search);
+    };
+    render() {
+        return (
+            <div>
+                <Form
+                    search={this.state.search}
+                    handleInputChange={this.handleInputChange}
+                    handleFormSubmit={this.handleFormSubmit}
+                />
+                <div className="container">
+                    <h2>Results</h2>
+                    <Results books={this.state.books} />
+                </div>
+            </div>
+        )
+    }
 }
+
+export default Search;
