@@ -1,16 +1,18 @@
-import React from 'react';
-import Form from '../components/Form';
-import Results from '../components/Results';
-import API from '../utils/API';
+import React from "react";
+import Form from "../components/Form";
+import Results from "../components/Results";
+import API from "../utils/API";
 
 class Search extends React.Component {
     state = {
-        value = "",
+        value: "",
         books: []
     };
+
     componentDidMount() {
         this.searchBook();
     }
+
     makeBook = bookData => {
         return {
             _id: bookData.id,
@@ -21,10 +23,11 @@ class Search extends React.Component {
             link: bookData.volumeInfo.previewLink
         }
     }
+
     searchBook = query => {
         API.getBook(query)
             .then(res => this.setState({ books: res.data.items.map(bookData => this.makeBook(bookData)) }))
-            .catch(err => console.log(err));
+            .catch(err => console.error(err));
     };
 
     handleInputChange = event => {
@@ -34,10 +37,12 @@ class Search extends React.Component {
             [name]: value
         });
     };
+
     handleFormSubmit = event => {
         event.preventDefault();
         this.searchBook(this.state.search);
     };
+
     render() {
         return (
             <div>
@@ -56,3 +61,4 @@ class Search extends React.Component {
 }
 
 export default Search;
+
