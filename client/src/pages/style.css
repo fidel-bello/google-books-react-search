@@ -1,0 +1,13 @@
+body {
+    background: #D4AF78;
+    background: -webkit-linear-gradient(bottom right, #D4AF78, #5986BB);
+    background: -moz-linear-gradient(bottom right, #D4AF78, #5986BB);
+    background: linear-gradient(to top left, #D4AF78, #5986BB);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Nunito;
+    font-weight: 500;
+  }  
