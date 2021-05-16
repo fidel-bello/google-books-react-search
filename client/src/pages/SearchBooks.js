@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import Jumbotron from '../components/Jumbotron';
-import { Col, Row, Container} from '../components/Grid';
+import { Col, Row, Container } from '../components/Grid';
 import './style.css'
+import Card from '../components/Card';
+import Form from '../components/Form';
 
 // Search Books class component
 class SearchBooks extends Component {
@@ -19,12 +21,19 @@ class SearchBooks extends Component {
                                 <Jumbotron>
                                     <h1 className="text-center">
                                         <strong style={{ color: 'white' }}>
-                                            Google Books Search
+                                        Google Books Search
 										</strong>
                                     </h1>
                                 </Jumbotron>
                             </Col>
                             <Col size="md-12">
+                                {}
+                                <Card
+									title=" Book Search"
+									icon="far fa-book"
+								>
+                                   <Form /> 
+                                </Card>
                             </Col>
                         </Row>
                         <Row>
