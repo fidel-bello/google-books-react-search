@@ -38,6 +38,11 @@ class SearchBooks extends Component {
             );
     };
 
+    handleFormSubmit = (e) => {
+        e.preventDefault();
+        this.getBooks();
+    };
+
     render() {
         return (
             <>
