@@ -4,6 +4,8 @@ import { Col, Row, Container } from '../components/Grid';
 import './style.css'
 import Card from '../components/Card';
 import Form from '../components/Form';
+import { List } from '../components/List';
+import Book from '../components/Book'
 
 // Search Books class component
 class SearchBooks extends Component {
@@ -38,6 +40,31 @@ class SearchBooks extends Component {
                         </Row>
                         <Row>
                             <Col size="md-12">
+                                {}
+                                <Card>
+                                <List>
+											{this.state.books.map(
+												(book) => (
+													<Book
+														key={ book.id }
+														title={	book.volumeInfo.title }
+														subtitle={ book.volumeInfo.subtitle }
+														link={ book.volumeInfo.infoLink }
+														authors={book.volumeInfo.authors.join(', ')}
+														description={ book.volumeInfo.description }
+														image={ book.volumeInfo.imageLinks.thumbnail }
+														Button={() => (
+															<button
+																onClick={() => this.handleBookSave( book.id )}
+																className="btn btn-primary ml-2" >
+																Save
+															</button>
+														)}
+													/>
+												)
+											)}
+										</List>
+                                </Card>
                             </Col>
                         </Row>
                         <br />
