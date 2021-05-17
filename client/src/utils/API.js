@@ -5,11 +5,11 @@ export default {
         return axios.get("/api/google", { params: { q: "title:" + q }});
     },
 
-    getSavedBooks: function() {
+    getSavedBooks: function(id) {
         return axios.get("/api/books" + id);
     },
 
-    deleteBooks: function() {
+    deleteBooks: function(bookData) {
         return axios.delete(".api/books", bookData)
     }
 }
