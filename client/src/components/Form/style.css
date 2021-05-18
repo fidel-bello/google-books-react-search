@@ -2,3 +2,9 @@
     background: #D4AF78;
     color: white;
 }
+body {
+    background: #D4AF78;
+    background: -webkit-linear-gradient(bottom right, #D4AF78, #5986BB);
+    background: -moz-linear-gradient(bottom right, #D4AF78, #5986BB);
+    background: linear-gradient(to top left, #D4AF78, #5986BB);  
+}

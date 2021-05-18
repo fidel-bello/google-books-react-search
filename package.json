@@ -1,28 +1,30 @@
 {
-  "name": "google-books-react-search",
+  "name": "google-books-search",
   "version": "1.0.0",
-  "description": "",
+  "description": "Mern Demo",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start:prod": "node server.js",
+    "seed": "node scripts/seedDB.js",
+    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
+    "client": "cd client && npm run start",
+    "install": "cd client && npm install",
+    "build": "cd client && npm run build",
+    "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/fidel-bello/google-books-react-search.git"
+  "author": "PratyushaRaghupatruni",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^4.1.0",
+    "nodemon": "^1.18.7"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/fidel-bello/google-books-react-search/issues"
-  },
-  "homepage": "https://github.com/fidel-bello/google-books-react-search#readme",
   "dependencies": {
-    "axios": "^0.21.1",
-    "dotenv": "^9.0.2",
+    "axios": "^0.21.0",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.10.15"
+    "mongoose": "^5.10.15",
+    "morgan": "^1.10.0"
   }
 }

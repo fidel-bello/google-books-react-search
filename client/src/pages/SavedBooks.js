@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import Jumbotron from "../components/Jumbotron";
-import Card from "../components/Card";
-import Book from "../components/Book";
+import Jumbotron from "../Components/Jumbotron";
+import Card from "../Components/Card";
+import Book from "../Components/Book";
 import API from "../utils/API";
-import { Col, Row, Container } from "../components/Grid";
-import { List } from "../components/List";
+import { Col, Row, Container } from "../Components/Grid";
+import { List } from "../Components/List";
 
 import './style.css';
 
@@ -16,6 +16,8 @@ class SavedBooks extends Component {
   componentDidMount() {
     this.getSavedBooks();
   }
+
+  
 
   getSavedBooks = () => {
     API.getSavedBooks()
@@ -42,7 +44,7 @@ class SavedBooks extends Component {
               <h1 className="text-center">
                 <strong style={{color:'white'}}> Google Books Search</strong>
               </h1>
-              <h2 className="text-center" style={{color:'white'}}>Search for and Save Books of Interest.</h2>
+              <h2 className="text-center" style={{color:'white'}}>Search for favorite books or books that you would like to read.</h2>
             </Jumbotron>
           </Col>
         </Row>
@@ -63,7 +65,7 @@ class SavedBooks extends Component {
                       Button={() => (
                         <button
                           onClick={() => this.handleBookDelete(book._id)}
-                          className="btn btn-danger ml-2"
+                          className="button ml-2"
                         >
                           Delete
                         </button>

@@ -8,7 +8,22 @@ body {
     width: 100%;
     display: flex;
     flex-direction: column;
-    font-family: Nunito;
     font-weight: 500;
   } 
-  
+  .button:hover {
+    background: #D4AF78;
+    color: white;
+  }
+.main-container {
+    background: #D4AF78;
+    background: -webkit-linear-gradient(bottom right, #D4AF78, #5986BB);
+    background: -moz-linear-gradient(bottom right, #D4AF78, #5986BB);
+    background: linear-gradient(to top left, #D4AF78, #5986BB);
+}
+
+#root{
+  background: #D4AF78;
+  background: -webkit-linear-gradient(bottom right, #D4AF78, #5986BB);
+  background: -moz-linear-gradient(bottom right, #D4AF78, #5986BB);
+  background: linear-gradient(to top left, #D4AF78, #5986BB);
+}
