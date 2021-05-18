@@ -6,7 +6,7 @@
 
    ## Table of Contents
    * [Description](#Description)
-   * [Installation](#Installation)
+   * [Dependencies](#Dependencies)
    * [Usage](#Usage)
    * [license](#License)
    * [Contributing](#Contributing)
