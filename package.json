@@ -4,7 +4,7 @@
   "description": "<h1 align=\"center\">Google Books React Search</h1>",
   "main": "server.js",
   "engines": {
-    
+    "node": "14.x"
   },
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
