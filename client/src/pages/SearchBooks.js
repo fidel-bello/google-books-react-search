@@ -9,7 +9,7 @@ import API from '../utils/API';
 import './style.css';
 
 class SearchBooks extends Component {
-	
+
 	state = {
 		books: [],
 		q: '',
@@ -41,7 +41,7 @@ class SearchBooks extends Component {
 	handleFormSubmit = (event) => {
 		event.preventDefault();
 
-	
+
 		this.getBooks();
 	};
 
@@ -73,7 +73,7 @@ class SearchBooks extends Component {
 								{/* Jumbotron */}
 								<Jumbotron>
 									<h1 className="text-center">
-										<strong style={{color:'white'}}>
+										<strong style={{ color: 'white' }}>
 											Google Books Search
 										</strong>
 									</h1>
@@ -106,16 +106,16 @@ class SearchBooks extends Component {
 											{this.state.books.map(
 												(book) => (
 													<Book
-														key={ book.id }
-														title={	book.volumeInfo.title }
-														subtitle={ book.volumeInfo.subtitle }
-														link={ book.volumeInfo.infoLink }
+														key={book.id}
+														title={book.volumeInfo.title}
+														subtitle={book.volumeInfo.subtitle}
+														link={book.volumeInfo.infoLink}
 														authors={book.volumeInfo.authors.join(', ')}
-														description={ book.volumeInfo.description }
-														image={ book.volumeInfo.imageLinks.thumbnail }
+														description={book.volumeInfo.description}
+														image={book.volumeInfo.imageLinks.thumbnail}
 														Button={() => (
 															<button
-																onClick={() => this.handleBookSave( book.id )}
+																onClick={() => this.handleBookSave(book.id)}
 																className="btn btn-primary ml-2" >
 																Save
 															</button>

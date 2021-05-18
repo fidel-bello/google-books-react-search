@@ -3,8 +3,8 @@ const db = require('../models');
 
 
 module.exports = {
-  
- 
+
+
 	findAll: async (req, res) => {
 		try {
 			const { query: params } = req;
@@ -27,16 +27,16 @@ module.exports = {
 
 			const dbBooks = await db.Book.find();
 
-			
+
 			const books = await apiBooks.filter((apiBook) =>
 				dbBooks.every(
 					(dbBook) => dbBook.googleId.toString() !== apiBook.id
 				)
 			);
 
-		
-      return res.json(books);
-      
+
+			return res.json(books);
+
 		} catch (error) {
 			return res.status(422).json(error);
 		}

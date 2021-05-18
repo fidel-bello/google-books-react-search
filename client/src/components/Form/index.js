@@ -6,7 +6,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
     <form>
       <div className="form-group">
         <label htmlFor="Query">
-          <strong style = {{fontSize : 'x-large' }}>Book</strong>
+          <strong style={{ fontSize: 'x-large' }}>Book</strong>
         </label>
         <input
           className="form-control"
