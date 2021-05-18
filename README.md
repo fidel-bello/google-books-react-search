@@ -15,7 +15,7 @@
    
  
 
-   ## Dependancies
+   ## Dependencies
    * React 
    * concurrently
    * nodemon
