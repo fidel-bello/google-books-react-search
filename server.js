@@ -15,7 +15,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("client/build"));
 }
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/google-books-react-search", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb+srv://fidel-bello:Password123!@cluster0.god7f.mongodb.net/myFirstDatabase?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
