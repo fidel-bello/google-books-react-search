@@ -6,6 +6,7 @@ import NoMatch from './pages/NoMatch';
 import "./style.css";
 import Nav from './Components/Nav';
 
+
 function App() {
 	return (
 		<Router>
