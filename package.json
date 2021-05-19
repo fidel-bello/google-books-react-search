@@ -1,7 +1,7 @@
 {
   "name": "google-books-react-search",
   "version": "1.0.0",
-  "description": "Mern",
+  "description": "Mern Demo",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
@@ -12,7 +12,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "author": "Fidel Bello",
+  "author": "Bello",
   "license": "MIT",
   "devDependencies": {
     "concurrently": "^4.1.0",
