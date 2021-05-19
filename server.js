@@ -33,3 +33,5 @@ app.listen(PORT, () => {
   // server
   console.log(`API server now on port ${PORT}!`);
 });
+
+//console.log(mongoose)
