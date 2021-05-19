@@ -1,10 +1,10 @@
 {
-  "name": "google-book-search",
+  "name": "google-books-search",
   "version": "0.1.0",
+  "description": "Google books search",
   "private": true,
   "proxy": "http://localhost:3001/",
   "dependencies": {
-    "@babel/core": "^7.14.3",
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
     "react": "^17.0.1",
@@ -15,14 +15,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
   },
   "browserslist": {
     "production": [
