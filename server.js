@@ -2,7 +2,6 @@ const express = require("express");
 const mongoose = require("mongoose");
 const path = require("path");
 const routes = require("./routes");
-const morgan = require('morgan')
 
 require('dotenv').config();
 
@@ -34,6 +33,3 @@ app.listen(PORT, () => {
   // server
   console.log(`API server now on port ${PORT}!`);
 });
-
-//console.log(mongoose)
-app.use(morgan('tiny'));
