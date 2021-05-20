@@ -49,10 +49,6 @@
    * My github is: [fidel-bello](https://github.com/fidel-bello)
    * Email me with questions: fidel_23@live.com
 
-
-   ## Deployed App
-   https://secure-depths-13978.herokuapp.com/
-
    ## Screen-shots
    ![Google Books Search - Google Chrome 5_18_2021 2_55_39 PM](https://user-images.githubusercontent.com/73322116/118708053-405c8400-b7e9-11eb-8e5b-7f40edbd6eed.png)
 
