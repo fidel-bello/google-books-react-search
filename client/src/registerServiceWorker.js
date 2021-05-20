@@ -1,7 +1,5 @@
 
 
-
-
 const isLocalhost = Boolean(
   window.location.hostname === "localhost" ||
     window.location.hostname === "[::1]" ||

@@ -8,15 +8,15 @@ require('dotenv').config();
 const PORT = process.env.PORT || 3001;
 const app = express();
 
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
 if (process.env.NODE_ENV === "production") {
-  //yarn build
   app.use(express.static("client/build"));
 }
 
-mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/google-books-react-search", {
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/google-books-react-search",{
   useNewUrlParser: true,
   useUnifiedTopology: true,
   useCreateIndex: true,
@@ -30,7 +30,5 @@ app.get("*", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  // server
   console.log(`API server now on port ${PORT}!`);
 });
-//should work now
