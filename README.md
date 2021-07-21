@@ -13,7 +13,7 @@
    * [Contributing](#Contributing)
    * [Test](#Test)
    * [Questions](#Questions)
-   * [Questions](#Questions)
+   * [Screenshots](#Screenshots)
   
    
   ## Deployed Website
