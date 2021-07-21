@@ -1,19 +1,22 @@
 
    <h1 align="center">Google Books React Search</h1>
-
+  
    ## Description
    * This project is a mern app that searches books using the Google Books Api. The user can search for books, click to view information about the book, and save the book to the app.
 
    ## Table of Contents
    * [Description](#Description)
+   * [Deployed] (#Deployed Website)
    * [Dependencies](#Dependencies)
    * [Usage](#Usage)
    * [license](#License)
    * [Contributing](#Contributing)
    * [Test](#Test)
    * [Questions](#Questions)
+  
    
- 
+  ## Deployed Website
+  https://react-searchbook.herokuapp.com/
 
    ## Dependencies
    * React 
@@ -56,5 +59,3 @@
 
   ![Data _ Atlas_ MongoDB Atlas - Google Chrome 5_20_2021 2_02_31 AM](https://user-images.githubusercontent.com/73322116/118927372-af33fd00-b90f-11eb-90fe-0fe842991ed0.png)
 
-## Deployed
-https://react-searchbook.herokuapp.com/
