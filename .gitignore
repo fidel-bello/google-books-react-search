@@ -8,3 +8,6 @@ build
 
 .DS_Store
 .env
+
+client/build
+config/default.json
