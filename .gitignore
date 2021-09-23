@@ -11,3 +11,4 @@ build
 
 client/build
 config/default.json
+config/production.json
