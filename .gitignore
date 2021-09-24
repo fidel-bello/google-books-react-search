@@ -1,14 +1,2 @@
-/yarn.lock
-
-**/node_modules
-
-.eslintcache
-
-build
-
-.DS_Store
-.env
-
-client/build
-config/default.json
-config/production.json
+node_modules
+node_modules
