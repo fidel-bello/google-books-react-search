@@ -13,10 +13,10 @@
    * [Contributing](#Contributing)
    * [Test](#Test)
    * [Questions](#Questions)
-   * [Screenshots](#Screen-shots)
+   * [Screenshots](#Screenshots)
   
    
-  ## Deployed 
+  ## Deployed Website
   https://react-searchbook.herokuapp.com/
 
    ## Dependencies
