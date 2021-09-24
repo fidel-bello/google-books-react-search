@@ -3,10 +3,10 @@
   "version": "0.1.0",
   "description": "Google books search",
   "private": true,
-  "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.21.0",
     "bootstrap": "^4.5.3",
+    "concurrently": "^6.2.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
@@ -29,5 +29,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "proxy": "http://localhost:5000"
 }
