@@ -15,9 +15,6 @@
    * [Questions](#Questions)
    * [Screenshots](#Screen-shots)
   
-   
-  ## Deployed 
-  https://react-searchbook.herokuapp.com/
 
    ## Dependencies
    * React 
